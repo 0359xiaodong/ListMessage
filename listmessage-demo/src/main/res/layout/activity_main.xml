@@ -1,0 +1,44 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+  <include
+      layout="@layout/layout_toolbar"
+      android:id="@+id/toolbar"
+      />
+
+  <FrameLayout
+      android:id="@+id/layoutList"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:layout_below="@id/toolbar"
+      >
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipToPadding="false"
+        android:scrollbarStyle="outsideOverlay"
+        android:scrollbars="vertical"
+        />
+
+    <Button
+        android:id="@+id/listMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/list_message_height"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/listMessageText"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@android:color/white"
+        android:drawableLeft="@mipmap/ic_arrow_up"
+        android:drawablePadding="@dimen/list_message_drawable_padding"
+        android:background="@drawable/list_message_background"
+        android:layout_marginTop="@dimen/list_message_margin"
+        android:paddingLeft="@dimen/list_message_padding"
+        android:paddingRight="@dimen/list_message_padding"
+        />
+  </FrameLayout>
+</RelativeLayout>

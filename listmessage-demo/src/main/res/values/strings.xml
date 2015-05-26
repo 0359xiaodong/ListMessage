@@ -1,0 +1,4 @@
+<resources>
+  <string name="appName">ListMessage-demo</string>
+  <string name="listMessageText">List Message Text</string>
+</resources>
