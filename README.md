@@ -1,5 +1,19 @@
 ListMessage
 ===== 
+![image](demo.gif)
+
+##Importing to your project
+Add this dependency to your build.gradle file:
+```java
+dependencies {
+    compile 'com.hrules:listmessage:1.0.0'
+}
+```
+##Usage
+```java
+ListMessage listMessage = new ListMessage(recyclerView, listMessageView);
+listMessage.show();
+```
 
 Developed by
 -------
