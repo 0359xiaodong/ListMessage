@@ -4,8 +4,8 @@ import android.animation.TimeInterpolator;
 import android.os.Handler;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
-import android.view.animation.AccelerateInterpolator;
-import android.view.animation.DecelerateInterpolator;
+import android.view.animation.AnticipateInterpolator;
+import android.view.animation.OvershootInterpolator;
 import android.widget.AbsListView;
 import android.widget.ListView;
 import android.widget.ScrollView;
@@ -94,8 +94,8 @@ public class ListMessage {
         });
 
         duration = Duration.INFINITE;
-        showInterpolator = new DecelerateInterpolator(2);
-        hideInterpolator = new AccelerateInterpolator(2);
+        showInterpolator = new OvershootInterpolator(2);
+        hideInterpolator = new AnticipateInterpolator(1);
     }
 
     private void setListener(ListMessageListener listener) {

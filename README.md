@@ -6,7 +6,7 @@ ListMessage
 Add this dependency to your build.gradle file:
 ```java
 dependencies {
-    compile 'com.hrules:listmessage:1.0.0'
+    compile 'com.hrules:listmessage:1.1.0'
 }
 ```
 ##Usage
